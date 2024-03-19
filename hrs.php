@@ -1,18 +1,16 @@
 <?php
 /*
- * Hour Registration Program
- * Author: [Your Name]
+ * Hour Registration Program(hrs)
+ * Author: Bryce van der Werf
  * Version: 1.0
- * Date: [Current Date]
+ * Date: 19/03/2024
  * Description: This program allows users to register their hours.
  *              It is intended for use on Windows systems with PHP environment set up.
  */
 
 // Contributors
 /*
- * - John Doe: Lead Developer - email@example.com
- * - Jane Smith: UI/UX Designer - email@example.com
- * - Alex Johnson: Quality Assurance - email@example.com
+ * - Bryce van der Werf: Developer - bryce.van.der.werf@student.gildeopleidingen.nl
  */
 
 // Note: Ensure that you have appropriate permissions to execute PHP scripts and access the directory where the program files are located.
