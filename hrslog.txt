@@ -1,0 +1,45 @@
+* done:
+- prevent SQL injections
+- make user password input invisible
+- function to be able to choose how many entrys
+- if user enters password incorrectly user only needs to re enter password(email doesnt need to be reentered)
+- limit number of logins to prevent abuse
+- cooldown when user enters password incorrectly
+
+*to do:
+- batch file to run the program instantly without needing to fill in commands to run it.
+- track date and time so you can maximumly register a project of a year ago(consult productowner)
+- only allow the requested data otherwise reject for example when asked time only allow 00:00 otherwise reject
+- Press ? to get help for commands like cntrl + c to go back
+- check if emailadress is an valid emailadress													
+- change colors when entering program
+- name: user input instead of question: user input
+- improve error handling
+- function to reset password
+- autoscroll
+- users can edit and delete/restore deleted entries
+
+
+
+*sql injections tried:
+' UNION SELECT id, name, password FROM users WHERE '1'='1'; --
+
+Login Attempts Limit:
+
+It's common to implement a login attempt limit to prevent brute force attacks. A typical threshold is around 3 to 5 failed attempts before imposing restrictions.
+Keep in mind that too many restrictions may inconvenience legitimate users, so finding a balance is crucial.
+Lockout Duration:
+
+If the user exceeds the allowed login attempts, consider implementing a lockout duration before they can attempt to log in again. This prevents continuous brute force attacks.
+A common lockout duration is 15 to 30 minutes, but you should adjust this based on your application's requirements.
+Reset Count After Restart:
+
+Resetting the login attempt count after the program restarts is a matter of usability and security.
+Resetting the count can be more user-friendly, but it might also make it easier for attackers to continuously attempt to guess the password.
+If you don't reset the count, users may be locked out for a longer time, but it adds an extra layer of security.
+Account Recovery:
+
+Implement a secure account recovery process, such as sending a password reset link to the user's email, in case they forget their password or get locked out.
+Logging and Monitoring:
+
+Log failed login attempts and regularly monitor logs to detect any suspicious activity. This helps in identifying potential security threats.
