@@ -1,4 +1,23 @@
 <?php
+/*
+ * Hour Registration Program
+ * Author: [Your Name]
+ * Version: 1.0
+ * Date: [Current Date]
+ * Description: This program allows users to register their hours.
+ *              It is intended for use on Windows systems with PHP environment set up.
+ */
+
+// Contributors
+/*
+ * - John Doe: Lead Developer - email@example.com
+ * - Jane Smith: UI/UX Designer - email@example.com
+ * - Alex Johnson: Quality Assurance - email@example.com
+ */
+
+// Note: Ensure that you have appropriate permissions to execute PHP scripts and access the directory where the program files are located.
+// Make sure to have a text editor installed on your system to view and edit the PHP script if necessary.
+
 $servername = "localhost";
 $username = "root";
 $password = "";
